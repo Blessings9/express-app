@@ -15,7 +15,7 @@ router.get('/', function (req, res) {
 });
 
 router.get('/sharks', function (req, res) {
-    res.sendFile(path + './sharks.html')
+    res.sendFile(path + '/sharks.html')
 });
 
 
@@ -23,5 +23,5 @@ app.use(express.static(path));
 app.use('/', router)
 
 app.listen(port, function() {
-    console.log('Example app listening on port 8080!')
+    console.log(`Example app listening on port ${port}!`)
 })
